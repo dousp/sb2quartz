@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration  scan="true" scanPeriod="10 seconds" >
+
+    <springProperty scope="context" name="SPRING_APP_NAME" source="spring.application.name"/>
+    <property name="LOG_PATH" value="target/log" />
+    <contextName>${SPRING_APP_NAME}</contextName>
+
+    <!-- 彩色日志格式 -->
+    <property name="CONSOLE_LOG_COLOR_PATTERN"
+              value="%black(%d{yyyy-MM-dd HH:mm:ss.SSS})-%green([%thread])-%highlight(%-5level) %boldMagenta(%logger) - %cyan(%msg %n)"/>
+    <!-- 文件日志格式 -->
+    <property name="CONSOLE_LOG_PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS}-[%thread]-%-5level-%logger %msg %n"/>
+
+
+    <!--输出到控制台-->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>${CONSOLE_LOG_COLOR_PATTERN}</Pattern>
+            <!-- 设置字符集 -->
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!--输出到文件-->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/${SPRING_APP_NAME}.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- 每天一归档 -->
+            <fileNamePattern>${SPRING_APP_NAME}.%d{yyyy-MM-dd}.log.%i</fileNamePattern>
+            <!-- 单个日志文件最多100MB, 30天的日志周期，最大不能超过10GB -->
+            <maxFileSize>100MB</maxFileSize>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>5GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <Pattern>${CONSOLE_LOG_PATTERN}</Pattern>
+        </encoder>
+    </appender>
+
+    <!--开发环境:打印控制台-->
+    <springProfile name="local,dev,test">
+        <logger name="com.dou.xin" level="debug"/>
+        <!--显示日志-->
+        <logger name="org.springframework.jdbc.core" additivity="false" level="DEBUG" >
+            <appender-ref ref="CONSOLE" />
+        </logger><logger name="org.springframework.web.servlet" additivity="false" level="DEBUG" >
+            <appender-ref ref="CONSOLE" />
+        </logger>
+        <logger name="org.springframework.web" additivity="false" level="DEBUG" >
+            <appender-ref ref="CONSOLE" />
+        </logger>
+    </springProfile>
+
+    <root level="info">
+        <appender-ref ref="CONSOLE" />
+        <!--<appender-ref ref="FILE" />-->
+    </root>
+
+
+</configuration>

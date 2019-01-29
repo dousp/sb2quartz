@@ -1,0 +1,11 @@
+ni hao !
+@ for(name in list){
+    <div>${name}</div>
+@ }
+
+<br/>
+
+@if( objectUtil.isNotEmpty("server.port") ){
+    <div>port is not empty : ${objectUtil.isNotEmpty("server.port")}</div>
+    <div>port is : ${env("server.port")}</div>
+@}
