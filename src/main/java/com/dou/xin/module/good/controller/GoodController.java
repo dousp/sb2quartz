@@ -1,7 +1,7 @@
-package com.dou.xin.quartz.demo.good.controller;
+package com.dou.xin.module.good.controller;
 
-import com.dou.xin.quartz.demo.good.entity.GoodInfoEntity;
-import com.dou.xin.quartz.demo.good.service.GoodInfoService;
+import com.dou.xin.module.good.entity.GoodInfoEntity;
+import com.dou.xin.module.good.service.GoodInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,4 +1,4 @@
-package com.dou.xin.quartz.demo2;
+package com.dou.xin.conf.quartz;
 
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;

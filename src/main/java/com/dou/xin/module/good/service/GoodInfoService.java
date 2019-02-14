@@ -1,10 +1,10 @@
-package com.dou.xin.quartz.demo.good.service;
+package com.dou.xin.module.good.service;
 
-import com.dou.xin.quartz.demo.good.entity.GoodInfoEntity;
-import com.dou.xin.quartz.demo.good.jpa.GoodInfoRepository;
-import com.dou.xin.quartz.demo.timers.GoodAddTimer;
-import com.dou.xin.quartz.demo.timers.GoodSecKillRemindTimer;
-import com.dou.xin.quartz.demo.timers.GoodStockCheckTimer;
+import com.dou.xin.module.good.entity.GoodInfoEntity;
+import com.dou.xin.module.good.jpa.GoodInfoRepository;
+import com.dou.xin.jobs.good.GoodAddTimer;
+import com.dou.xin.jobs.good.GoodSecKillRemindTimer;
+import com.dou.xin.jobs.good.GoodStockCheckTimer;
 import org.quartz.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

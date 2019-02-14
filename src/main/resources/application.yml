@@ -99,7 +99,7 @@ spring:
 spring:
     profiles: dev
 #  datasource:
-#    url: jdbc:mysql://127.0.0.1:3306/guns?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+#    url: jdbc:mysql://127.0.0.1:3306/xin?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
 #    username: root
 #    password: berrybio
 
@@ -108,7 +108,7 @@ spring:
 spring:
     profiles: test
 #  datasource:
-#    url: jdbc:mysql://127.0.0.1:3306/guns?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+#    url: jdbc:mysql://127.0.0.1:3306/xin?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
 #    username: root
 #    password: root
 
@@ -117,7 +117,7 @@ spring:
 spring:
     profiles: produce
 #  datasource:
-#    url: jdbc:mysql://127.0.0.1:3306/guns?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+#    url: jdbc:mysql://127.0.0.1:3306/xin?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
 #    username: root
 #    password: root
 

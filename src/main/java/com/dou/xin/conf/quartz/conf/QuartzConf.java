@@ -1,4 +1,4 @@
-package com.dou.xin.quartz.conf;
+package com.dou.xin.conf.quartz.conf;
 
 import org.springframework.boot.autoconfigure.quartz.SchedulerFactoryBeanCustomizer;
 import org.springframework.context.annotation.Configuration;

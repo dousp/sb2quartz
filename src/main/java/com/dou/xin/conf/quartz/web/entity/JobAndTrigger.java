@@ -1,4 +1,4 @@
-package com.dou.xin.quartz.main.entity;
+package com.dou.xin.conf.quartz.web.entity;
 
 import java.math.BigInteger;
 

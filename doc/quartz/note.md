@@ -60,7 +60,7 @@ org.quartz.jobStore.tablePrefix = QRTZ_
 #org.quartz.dataSource中配置的dataSource名字
 org.quartz.jobStore.dataSource = qzDS
 
-org.quartz.dataSource.qzDS.connectionProvider.class = com.dou.xin.quartz.conf.DruidConnectionProvider
+org.quartz.dataSource.qzDS.connectionProvider.class = com.dou.xin.conf.quartz.conf.DruidConnectionProvider
 org.quartz.dataSource.qzDS.driver = com.mysql.jdbc.Driver
 org.quartz.dataSource.qzDS.URL = jdbc:mysql://127.0.0.1:3306/quartz_anls_plus?useUnicode=true&characterEncoding=UTF-8
 org.quartz.dataSource.qzDS.user = root

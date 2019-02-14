@@ -1,4 +1,4 @@
-package com.dou.xin.quartz.demo.timers;
+package com.dou.xin.jobs.good;
 
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;

@@ -1,6 +1,6 @@
-package com.dou.xin.quartz.main.controller;
+package com.dou.xin.conf.quartz.web.controller;
 
-import com.dou.xin.quartz.demo2.BaseJob;
+import com.dou.xin.conf.quartz.BaseJob;
 import org.quartz.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package com.dou.xin.quartz.demo.good.entity;
+package com.dou.xin.module.good.entity;
 
 import lombok.Data;
 

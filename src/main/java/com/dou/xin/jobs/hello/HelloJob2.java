@@ -1,4 +1,4 @@
-package com.dou.xin.quartz.demo2;
+package com.dou.xin.jobs.hello;
 
 import org.quartz.JobDataMap;
 import org.quartz.JobExecutionContext;

@@ -45,7 +45,8 @@
         <!--显示日志-->
         <logger name="org.springframework.jdbc.core" additivity="false" level="DEBUG" >
             <appender-ref ref="CONSOLE" />
-        </logger><logger name="org.springframework.web.servlet" additivity="false" level="DEBUG" >
+        </logger>
+        <logger name="org.springframework.web.servlet" additivity="false" level="DEBUG" >
             <appender-ref ref="CONSOLE" />
         </logger>
         <logger name="org.springframework.web" additivity="false" level="DEBUG" >

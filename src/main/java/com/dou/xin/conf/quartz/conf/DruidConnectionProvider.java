@@ -1,4 +1,4 @@
-package com.dou.xin.quartz.conf;
+package com.dou.xin.conf.quartz.conf;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.quartz.SchedulerException;

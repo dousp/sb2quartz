@@ -1,7 +1,7 @@
-package com.dou.xin.quartz.demo.good.jpa;
+package com.dou.xin.module.good.jpa;
 
 
-import com.dou.xin.quartz.demo.good.entity.GoodInfoEntity;
+import com.dou.xin.module.good.entity.GoodInfoEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

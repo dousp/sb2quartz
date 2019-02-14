@@ -1,5 +1,6 @@
-package com.dou.xin.quartz.demo2;
+package com.dou.xin.jobs.hello;
 
+import com.dou.xin.conf.quartz.BaseJob;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 import org.slf4j.Logger;
