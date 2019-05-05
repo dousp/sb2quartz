@@ -11,7 +11,7 @@ spring:
     http:
         log-request-details: false
     application:
-        name: xin
+        name: sb2quartz
     profiles:
         active: @spring.active@
     jpa:
@@ -69,7 +69,7 @@ spring:
     quartz:
         auto-startup: true
         wait-for-jobs-to-complete-on-shutdown: true
-        # scheduler-name: xinScheduler
+        # scheduler-name: sb2quartzScheduler
         startup-delay: 4s
         overwrite-existing-jobs: false
         job-store-type: jdbc

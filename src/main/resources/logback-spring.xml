@@ -41,7 +41,7 @@
 
     <!--开发环境:打印控制台-->
     <springProfile name="local,dev,test">
-        <logger name="com.dou.xin" level="debug"/>
+        <logger name="com.dou.sb2quartz" level="debug"/>
         <!--显示日志-->
         <logger name="org.springframework.jdbc.core" additivity="false" level="DEBUG" >
             <appender-ref ref="CONSOLE" />
