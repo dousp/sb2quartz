@@ -8,12 +8,12 @@ import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan(value= {"com.dou.sb2quartz.*"})
 @SpringBootApplication
-public class XinApplication {
+public class Sb2quartzApplication {
 
-    private static Logger logger = LoggerFactory.getLogger(XinApplication.class);
+    private static Logger logger = LoggerFactory.getLogger(Sb2quartzApplication.class);
 
     public static void main(String[] args) {
-        SpringApplication.run(XinApplication.class, args);
+        SpringApplication.run(Sb2quartzApplication.class, args);
         logger.info("【【【【【【XinApplication已启动】】】】】】");
     }
 
