@@ -67,11 +67,11 @@ spring:
                 # filters: stat,wall,log4j
                 log-slow-sql: true
     quartz:
+        auto-startup: true
         wait-for-jobs-to-complete-on-shutdown: true
         # scheduler-name: xinScheduler
         startup-delay: 4s
         overwrite-existing-jobs: false
-        auto-startup: true
         job-store-type: jdbc
         jdbc:
             initialize-schema: never
